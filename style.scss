@@ -75,11 +75,16 @@ $width: 100vw;
                 .subscribe-input {
                     border: 1px solid pink;
                     outline: none;
-                    width: 200px;
+                    width: 300px;
                     height: 30px;
                     padding-left: 10px;
                     color: #333;
-                    margin: 20px 0;
+                    margin: 15px 0;
+                    border-radius: 3px;
+                    &::placeholder {
+                        color: pink;
+                        opacity: 1;
+                    }
                 }
                 .buttons {
                     display: flex;
@@ -90,9 +95,8 @@ $width: 100vw;
                         border: 1px solid pink;
                         background: transparent;
                         color: pink;
-                        &::placeholder {
-                            color: #333;
-                        }
+                        border-radius: 3px;
+                        font-size: 0.8rem;
                         &:hover {
                             color: #fff;
                             background-color: pink;
@@ -102,6 +106,8 @@ $width: 100vw;
                     }
                     .products-button {
                         margin-left: 20px;
+                        text-decoration: none;
+                        // font-size: 1rem;
                     }
                 }
             }

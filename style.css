@@ -118,11 +118,32 @@ body {
 .container section.landing .section-content .section-form .subscribe-input {
   border: 1px solid pink;
   outline: none;
-  width: 200px;
+  width: 300px;
   height: 30px;
   padding-left: 10px;
   color: #333;
-  margin: 20px 0;
+  margin: 15px 0;
+  border-radius: 3px;
+}
+
+.container section.landing .section-content .section-form .subscribe-input::-webkit-input-placeholder {
+  color: pink;
+  opacity: 1;
+}
+
+.container section.landing .section-content .section-form .subscribe-input:-ms-input-placeholder {
+  color: pink;
+  opacity: 1;
+}
+
+.container section.landing .section-content .section-form .subscribe-input::-ms-input-placeholder {
+  color: pink;
+  opacity: 1;
+}
+
+.container section.landing .section-content .section-form .subscribe-input::placeholder {
+  color: pink;
+  opacity: 1;
 }
 
 .container section.landing .section-content .section-form .buttons {
@@ -141,22 +162,8 @@ body {
   border: 1px solid pink;
   background: transparent;
   color: pink;
-}
-
-.container section.landing .section-content .section-form .buttons .button::-webkit-input-placeholder {
-  color: #333;
-}
-
-.container section.landing .section-content .section-form .buttons .button:-ms-input-placeholder {
-  color: #333;
-}
-
-.container section.landing .section-content .section-form .buttons .button::-ms-input-placeholder {
-  color: #333;
-}
-
-.container section.landing .section-content .section-form .buttons .button::placeholder {
-  color: #333;
+  border-radius: 3px;
+  font-size: 0.8rem;
 }
 
 .container section.landing .section-content .section-form .buttons .button:hover {
@@ -169,5 +176,6 @@ body {
 
 .container section.landing .section-content .section-form .buttons .products-button {
   margin-left: 20px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
