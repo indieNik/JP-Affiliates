@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+$header-height: 8vh;
+$width: 100vw;
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $header-height;
+    min-height: 20px;
+    background-color: pink;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        a {
+            text-decoration: none;
+            color: #333;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    background-color: transparent;
+    width: $width;
+    height: 100vh - $header-height;
+    margin: 0;
+    margin-top: $header-height;
+    overflow: hidden;
+
+    section.landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section-image {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.8;
+            object-fit: cover;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            background-color: rgba($color: #333, $alpha: 0.4);
+            padding: 20px 0;
+            .section-header {
+                color: pink;
+            }
+            .section-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                .subscribe-input {
+                    border: 1px solid pink;
+                    outline: none;
+                    width: 200px;
+                    height: 30px;
+                    padding-left: 10px;
+                    color: #333;
+                    margin: 20px 0;
+                }
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    .button {
+                        padding: 8px;
+                        border: 1px solid pink;
+                        background: transparent;
+                        color: pink;
+                        &::placeholder {
+                            color: #333;
+                        }
+                        &:hover {
+                            color: #fff;
+                            background-color: pink;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                        }
+                    }
+                    .products-button {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
