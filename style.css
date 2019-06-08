@@ -121,7 +121,7 @@ body {
   width: 300px;
   height: 30px;
   padding-left: 10px;
-  color: #333;
+  color: pink;
   margin: 15px 0;
   border-radius: 3px;
 }
@@ -177,5 +177,7 @@ body {
 .container section.landing .section-content .section-form .buttons .products-button {
   margin-left: 20px;
   text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 192, 203, 0.4);
 }
 /*# sourceMappingURL=style.css.map */
